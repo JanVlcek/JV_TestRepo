@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="6254" systemVersion="13F1066" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="CoinsPouch" representedClassName="CoinsPouch" syncable="YES">
+        <attribute name="amount" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="timeStamp" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="trainingType" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="transType" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Config" representedClassName="Config" syncable="YES">
+        <attribute name="contextSentences" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="fullText" optional="YES" attributeType="Integer 16" syncable="YES"/>
+        <attribute name="game" optional="YES" attributeType="Integer 16" syncable="YES"/>
+        <attribute name="intListening" optional="YES" attributeType="Integer 16" syncable="YES"/>
+        <attribute name="know" optional="YES" attributeType="Integer 16" syncable="YES"/>
+        <attribute name="listening" optional="YES" attributeType="Integer 16" syncable="YES"/>
+        <attribute name="mixWordSentence" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="numberOfDays" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="oneOf3" optional="YES" attributeType="Integer 16" syncable="YES"/>
+    </entity>
+    <entity name="Day" representedClassName="Day" syncable="YES">
+        <attribute name="completedTrainingId" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="globalProgress" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <relationship name="dayCard" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="DayTrainingCard" inverseName="day" inverseEntity="DayTrainingCard" syncable="YES"/>
+        <relationship name="raceDetail" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="RaceDetail" inverseName="day" inverseEntity="RaceDetail" syncable="YES"/>
+    </entity>
+    <entity name="DayTrainingCard" representedClassName="DayTrainingCard" syncable="YES">
+        <attribute name="progress" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="status" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <relationship name="card" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="TrainingCard" inverseName="dayCard" inverseEntity="TrainingCard" syncable="YES"/>
+        <relationship name="day" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Day" inverseName="dayCard" inverseEntity="Day" syncable="YES"/>
+        <relationship name="wordBank" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="WordBank" inverseName="trainingCard" inverseEntity="WordBank" syncable="YES"/>
+    </entity>
+    <entity name="Lection" representedClassName="Lection" syncable="YES">
+        <attribute name="langCode" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lID" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="words" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="WordData" syncable="YES"/>
+    </entity>
+    <entity name="Race" representedClassName="Race" syncable="YES">
+        <relationship name="detail" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="RaceDetail" inverseName="race" inverseEntity="RaceDetail" syncable="YES"/>
+        <relationship name="session" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Session" inverseName="race" inverseEntity="Session" syncable="YES"/>
+    </entity>
+    <entity name="RaceDetail" representedClassName="RaceDetail" syncable="YES">
+        <attribute name="progress" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="result" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="velocity" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <relationship name="day" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Day" inverseName="raceDetail" inverseEntity="Day" syncable="YES"/>
+        <relationship name="race" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Race" inverseName="detail" inverseEntity="Race" syncable="YES"/>
+        <relationship name="racer" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Racers" inverseName="raceDetail" inverseEntity="Racers" syncable="YES"/>
+    </entity>
+    <entity name="Racers" representedClassName="Racers" syncable="YES">
+        <attribute name="baseVelocity" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="image" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="raceDetail" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="RaceDetail" inverseName="racer" inverseEntity="RaceDetail" syncable="YES"/>
+    </entity>
+    <entity name="Session" representedClassName="Session" syncable="YES">
+        <attribute name="id" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="langCode" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="progress" optional="YES" attributeType="Double" defaultValueString="0" syncable="YES"/>
+        <attribute name="startDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <relationship name="coinsPouch" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="CoinsPouch" syncable="YES"/>
+        <relationship name="config" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Config" syncable="YES"/>
+        <relationship name="day" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Day" syncable="YES"/>
+        <relationship name="race" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Race" inverseName="session" inverseEntity="Race" syncable="YES"/>
+        <relationship name="wordScore" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="WordScore" inverseName="session" inverseEntity="WordScore" syncable="YES"/>
+    </entity>
+    <entity name="TrainingCard" representedClassName="TrainingCard" syncable="YES">
+        <attribute name="canCancel" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="learnDirection" optional="YES" attributeType="Integer 16" syncable="YES"/>
+        <attribute name="mixData" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="trainingType" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="uid" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="wordType" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="dayCard" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="DayTrainingCard" inverseName="card" inverseEntity="DayTrainingCard" syncable="YES"/>
+    </entity>
+    <entity name="WordBank" representedClassName="WordBank" syncable="YES">
+        <attribute name="order" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <relationship name="trainingCard" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="DayTrainingCard" inverseName="wordBank" inverseEntity="DayTrainingCard" syncable="YES"/>
+        <relationship name="word" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="WordData" inverseName="wordBank" inverseEntity="WordData" syncable="YES"/>
+    </entity>
+    <entity name="WordData" representedClassName="WordData" syncable="YES">
+        <attribute name="f_lang" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="f_sound" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="langCode" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lID" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="o_lang" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="o_sound" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="u_id" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="w_id" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <relationship name="wordBank" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="WordBank" inverseName="word" inverseEntity="WordBank" syncable="YES"/>
+    </entity>
+    <entity name="WordScore" representedClassName="WordScore" syncable="YES">
+        <attribute name="order" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="score" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <relationship name="session" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Session" inverseName="wordScore" inverseEntity="Session" syncable="YES"/>
+        <relationship name="word" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="WordData" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="CoinsPouch" positionX="-612" positionY="230" width="128" height="103"/>
+        <element name="Config" positionX="-884" positionY="101" width="128" height="178"/>
+        <element name="Day" positionX="-315" positionY="-27" width="128" height="118"/>
+        <element name="DayTrainingCard" positionX="-144" positionY="-36" width="128" height="118"/>
+        <element name="Lection" positionX="63" positionY="-133" width="128" height="103"/>
+        <element name="Race" positionX="-542" positionY="-198" width="128" height="73"/>
+        <element name="RaceDetail" positionX="-522" positionY="-73" width="128" height="133"/>
+        <element name="Racers" positionX="-756" positionY="-124" width="128" height="103"/>
+        <element name="Session" positionX="-720" positionY="-0" width="128" height="193"/>
+        <element name="TrainingCard" positionX="-315" positionY="270" width="128" height="163"/>
+        <element name="WordBank" positionX="25" positionY="27" width="128" height="88"/>
+        <element name="WordData" positionX="187" positionY="23" width="128" height="193"/>
+        <element name="WordScore" positionX="-317" positionY="126" width="128" height="103"/>
+    </elements>
+</model>

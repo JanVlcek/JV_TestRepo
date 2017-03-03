@@ -1,0 +1,761 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2DC1ABE49B000A274B71D9B5 /* Pods_WorgReborn.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CB4AFEC98AD9C8A7C807055 /* Pods_WorgReborn.framework */; };
+		D265FB021E65FAA300B9E1E9 /* Lection.swift in Sources */ = {isa = PBXBuildFile; fileRef = D265FB011E65FAA300B9E1E9 /* Lection.swift */; };
+		D265FB041E6602FE00B9E1E9 /* LectionDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = D265FB031E6602FE00B9E1E9 /* LectionDetail.swift */; };
+		D2BCB20E1E582F8400A230AD /* Word.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2BCB20D1E582F8400A230AD /* Word.swift */; };
+		D2F736FC1E55DB5F00DAF253 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F736FB1E55DB5F00DAF253 /* AppDelegate.swift */; };
+		D2F736FE1E55DB5F00DAF253 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F736FD1E55DB5F00DAF253 /* FirstViewController.swift */; };
+		D2F737001E55DB5F00DAF253 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F736FF1E55DB5F00DAF253 /* SecondViewController.swift */; };
+		D2F737031E55DB5F00DAF253 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2F737011E55DB5F00DAF253 /* Main.storyboard */; };
+		D2F737051E55DB5F00DAF253 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2F737041E55DB5F00DAF253 /* Assets.xcassets */; };
+		D2F737081E55DB5F00DAF253 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2F737061E55DB5F00DAF253 /* LaunchScreen.storyboard */; };
+		D2F737131E55DB6000DAF253 /* WorgRebornUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F737121E55DB6000DAF253 /* WorgRebornUITests.swift */; };
+		D2F737241E55DE0700DAF253 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2F737231E55DE0700DAF253 /* NotificationCenter.framework */; };
+		D2F737271E55DE0700DAF253 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F737261E55DE0700DAF253 /* TodayViewController.swift */; };
+		D2F7372A1E55DE0700DAF253 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2F737281E55DE0700DAF253 /* MainInterface.storyboard */; };
+		D2F7372E1E55DE0700DAF253 /* WorgRebornExt.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = D2F737211E55DE0700DAF253 /* WorgRebornExt.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D2F7370F1E55DB6000DAF253 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D2F736F01E55DB5F00DAF253 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D2F736F71E55DB5F00DAF253;
+			remoteInfo = WorgReborn;
+		};
+		D2F7372C1E55DE0700DAF253 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D2F736F01E55DB5F00DAF253 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D2F737201E55DE0700DAF253;
+			remoteInfo = WorgRebornExt;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D2F737321E55DE0700DAF253 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				D2F7372E1E55DE0700DAF253 /* WorgRebornExt.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1D7D3BEDC9456D2451F4C94B /* Pods-WorgReborn.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WorgReborn.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WorgReborn/Pods-WorgReborn.debug.xcconfig"; sourceTree = "<group>"; };
+		4CB4AFEC98AD9C8A7C807055 /* Pods_WorgReborn.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WorgReborn.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D265FB011E65FAA300B9E1E9 /* Lection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Lection.swift; sourceTree = "<group>"; };
+		D265FB031E6602FE00B9E1E9 /* LectionDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LectionDetail.swift; sourceTree = "<group>"; };
+		D2BCB20D1E582F8400A230AD /* Word.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Word.swift; sourceTree = "<group>"; };
+		D2F736F81E55DB5F00DAF253 /* WorgReborn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WorgReborn.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2F736FB1E55DB5F00DAF253 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = ../AppDelegate.swift; sourceTree = "<group>"; };
+		D2F736FD1E55DB5F00DAF253 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FirstViewController.swift; path = ../FirstViewController.swift; sourceTree = "<group>"; };
+		D2F736FF1E55DB5F00DAF253 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SecondViewController.swift; path = ../SecondViewController.swift; sourceTree = "<group>"; };
+		D2F737021E55DB5F00DAF253 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D2F737041E55DB5F00DAF253 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../Assets.xcassets; sourceTree = "<group>"; };
+		D2F737071E55DB5F00DAF253 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D2F737091E55DB5F00DAF253 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D2F7370E1E55DB6000DAF253 /* WorgRebornUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WorgRebornUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2F737121E55DB6000DAF253 /* WorgRebornUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorgRebornUITests.swift; sourceTree = "<group>"; };
+		D2F737141E55DB6000DAF253 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D2F737211E55DE0700DAF253 /* WorgRebornExt.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = WorgRebornExt.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2F737231E55DE0700DAF253 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		D2F737261E55DE0700DAF253 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		D2F737291E55DE0700DAF253 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		D2F7372B1E55DE0700DAF253 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D2F737331E5619FC00DAF253 /* WorgRebornExt.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WorgRebornExt.entitlements; sourceTree = "<group>"; };
+		D2F737341E561A4100DAF253 /* WorgReborn.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WorgReborn.entitlements; sourceTree = "<group>"; };
+		D2F7378A1E5824C900DAF253 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = "../../../Library/Developer/Xcode/DerivedData/WorgReborn-fzlvspkumktrmuchfogniapxnuor/Build/Products/Debug-iphonesimulator/Realm/Realm.framework"; sourceTree = "<group>"; };
+		D2F7378B1E5824C900DAF253 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = "Pods/../build/Debug-iphoneos/RealmSwift/RealmSwift.framework"; sourceTree = "<group>"; };
+		EDE98118FFFDE69460369A2B /* Pods-WorgReborn.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WorgReborn.release.xcconfig"; path = "Pods/Target Support Files/Pods-WorgReborn/Pods-WorgReborn.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D2F736F51E55DB5F00DAF253 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2DC1ABE49B000A274B71D9B5 /* Pods_WorgReborn.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2F7370B1E55DB6000DAF253 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2F7371E1E55DE0700DAF253 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2F737241E55DE0700DAF253 /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2B47CE9EA3E383D0E2171835 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1D7D3BEDC9456D2451F4C94B /* Pods-WorgReborn.debug.xcconfig */,
+				EDE98118FFFDE69460369A2B /* Pods-WorgReborn.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D2F736EF1E55DB5F00DAF253 = {
+			isa = PBXGroup;
+			children = (
+				D2F736FA1E55DB5F00DAF253 /* WorgReborn */,
+				D2F737111E55DB6000DAF253 /* WorgRebornUITests */,
+				D2F737251E55DE0700DAF253 /* WorgRebornExt */,
+				D2F737221E55DE0700DAF253 /* Frameworks */,
+				D2F736F91E55DB5F00DAF253 /* Products */,
+				2B47CE9EA3E383D0E2171835 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		D2F736F91E55DB5F00DAF253 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D2F736F81E55DB5F00DAF253 /* WorgReborn.app */,
+				D2F7370E1E55DB6000DAF253 /* WorgRebornUITests.xctest */,
+				D2F737211E55DE0700DAF253 /* WorgRebornExt.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D2F736FA1E55DB5F00DAF253 /* WorgReborn */ = {
+			isa = PBXGroup;
+			children = (
+				D2F737851E58231B00DAF253 /* Models */,
+				D2F7377D1E58230100DAF253 /* Controllers */,
+				D2F7377E1E58230100DAF253 /* Factories */,
+				D2F7377F1E58230100DAF253 /* Resource */,
+				D2F737841E58230100DAF253 /* Views */,
+				D2F737341E561A4100DAF253 /* WorgReborn.entitlements */,
+				D2F737091E55DB5F00DAF253 /* Info.plist */,
+			);
+			path = WorgReborn;
+			sourceTree = "<group>";
+		};
+		D2F737111E55DB6000DAF253 /* WorgRebornUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D2F737121E55DB6000DAF253 /* WorgRebornUITests.swift */,
+				D2F737141E55DB6000DAF253 /* Info.plist */,
+			);
+			path = WorgRebornUITests;
+			sourceTree = "<group>";
+		};
+		D2F737221E55DE0700DAF253 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D2F7378A1E5824C900DAF253 /* Realm.framework */,
+				D2F7378B1E5824C900DAF253 /* RealmSwift.framework */,
+				D2F737231E55DE0700DAF253 /* NotificationCenter.framework */,
+				4CB4AFEC98AD9C8A7C807055 /* Pods_WorgReborn.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D2F737251E55DE0700DAF253 /* WorgRebornExt */ = {
+			isa = PBXGroup;
+			children = (
+				D2F737331E5619FC00DAF253 /* WorgRebornExt.entitlements */,
+				D2F737261E55DE0700DAF253 /* TodayViewController.swift */,
+				D2F737281E55DE0700DAF253 /* MainInterface.storyboard */,
+				D2F7372B1E55DE0700DAF253 /* Info.plist */,
+			);
+			path = WorgRebornExt;
+			sourceTree = "<group>";
+		};
+		D2F7377D1E58230100DAF253 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D2F736FB1E55DB5F00DAF253 /* AppDelegate.swift */,
+				D2F736FD1E55DB5F00DAF253 /* FirstViewController.swift */,
+				D2F736FF1E55DB5F00DAF253 /* SecondViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		D2F7377E1E58230100DAF253 /* Factories */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Factories;
+			sourceTree = "<group>";
+		};
+		D2F7377F1E58230100DAF253 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				D2F737011E55DB5F00DAF253 /* Main.storyboard */,
+				D2F737061E55DB5F00DAF253 /* LaunchScreen.storyboard */,
+				D2F737041E55DB5F00DAF253 /* Assets.xcassets */,
+				D2F737801E58230100DAF253 /* Fonts */,
+				D2F737811E58230100DAF253 /* NIBs */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		D2F737801E58230100DAF253 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		D2F737811E58230100DAF253 /* NIBs */ = {
+			isa = PBXGroup;
+			children = (
+				D2F737821E58230100DAF253 /* Controllers */,
+				D2F737831E58230100DAF253 /* Views */,
+			);
+			path = NIBs;
+			sourceTree = "<group>";
+		};
+		D2F737821E58230100DAF253 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		D2F737831E58230100DAF253 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D2F737841E58230100DAF253 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D2F737851E58231B00DAF253 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D2BCB20D1E582F8400A230AD /* Word.swift */,
+				D265FB011E65FAA300B9E1E9 /* Lection.swift */,
+				D265FB031E6602FE00B9E1E9 /* LectionDetail.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D2F736F71E55DB5F00DAF253 /* WorgReborn */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D2F737171E55DB6000DAF253 /* Build configuration list for PBXNativeTarget "WorgReborn" */;
+			buildPhases = (
+				C1E9E9356CA55C46147780FB /* [CP] Check Pods Manifest.lock */,
+				D2F736F41E55DB5F00DAF253 /* Sources */,
+				D2F736F51E55DB5F00DAF253 /* Frameworks */,
+				D2F736F61E55DB5F00DAF253 /* Resources */,
+				D2F737321E55DE0700DAF253 /* Embed App Extensions */,
+				658F550CB8AC416BB2296024 /* [CP] Embed Pods Frameworks */,
+				9B56C00671A118B2F542DE77 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D2F7372D1E55DE0700DAF253 /* PBXTargetDependency */,
+			);
+			name = WorgReborn;
+			productName = WorgReborn;
+			productReference = D2F736F81E55DB5F00DAF253 /* WorgReborn.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D2F7370D1E55DB6000DAF253 /* WorgRebornUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D2F7371A1E55DB6000DAF253 /* Build configuration list for PBXNativeTarget "WorgRebornUITests" */;
+			buildPhases = (
+				D2F7370A1E55DB6000DAF253 /* Sources */,
+				D2F7370B1E55DB6000DAF253 /* Frameworks */,
+				D2F7370C1E55DB6000DAF253 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D2F737101E55DB6000DAF253 /* PBXTargetDependency */,
+			);
+			name = WorgRebornUITests;
+			productName = WorgRebornUITests;
+			productReference = D2F7370E1E55DB6000DAF253 /* WorgRebornUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		D2F737201E55DE0700DAF253 /* WorgRebornExt */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D2F7372F1E55DE0700DAF253 /* Build configuration list for PBXNativeTarget "WorgRebornExt" */;
+			buildPhases = (
+				D2F7371D1E55DE0700DAF253 /* Sources */,
+				D2F7371E1E55DE0700DAF253 /* Frameworks */,
+				D2F7371F1E55DE0700DAF253 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WorgRebornExt;
+			productName = WorgRebornExt;
+			productReference = D2F737211E55DE0700DAF253 /* WorgRebornExt.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D2F736F01E55DB5F00DAF253 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = None;
+				TargetAttributes = {
+					D2F736F71E55DB5F00DAF253 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 33CTRV3MKT;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					D2F7370D1E55DB6000DAF253 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = D2F736F71E55DB5F00DAF253;
+					};
+					D2F737201E55DE0700DAF253 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 33CTRV3MKT;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = D2F736F31E55DB5F00DAF253 /* Build configuration list for PBXProject "WorgReborn" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D2F736EF1E55DB5F00DAF253;
+			productRefGroup = D2F736F91E55DB5F00DAF253 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D2F736F71E55DB5F00DAF253 /* WorgReborn */,
+				D2F7370D1E55DB6000DAF253 /* WorgRebornUITests */,
+				D2F737201E55DE0700DAF253 /* WorgRebornExt */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D2F736F61E55DB5F00DAF253 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2F737081E55DB5F00DAF253 /* LaunchScreen.storyboard in Resources */,
+				D2F737051E55DB5F00DAF253 /* Assets.xcassets in Resources */,
+				D2F737031E55DB5F00DAF253 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2F7370C1E55DB6000DAF253 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2F7371F1E55DE0700DAF253 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2F7372A1E55DE0700DAF253 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		658F550CB8AC416BB2296024 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WorgReborn/Pods-WorgReborn-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9B56C00671A118B2F542DE77 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WorgReborn/Pods-WorgReborn-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C1E9E9356CA55C46147780FB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D2F736F41E55DB5F00DAF253 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D265FB021E65FAA300B9E1E9 /* Lection.swift in Sources */,
+				D2F737001E55DB5F00DAF253 /* SecondViewController.swift in Sources */,
+				D2BCB20E1E582F8400A230AD /* Word.swift in Sources */,
+				D2F736FC1E55DB5F00DAF253 /* AppDelegate.swift in Sources */,
+				D2F736FE1E55DB5F00DAF253 /* FirstViewController.swift in Sources */,
+				D265FB041E6602FE00B9E1E9 /* LectionDetail.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2F7370A1E55DB6000DAF253 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2F737131E55DB6000DAF253 /* WorgRebornUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2F7371D1E55DE0700DAF253 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2F737271E55DE0700DAF253 /* TodayViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D2F737101E55DB6000DAF253 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D2F736F71E55DB5F00DAF253 /* WorgReborn */;
+			targetProxy = D2F7370F1E55DB6000DAF253 /* PBXContainerItemProxy */;
+		};
+		D2F7372D1E55DE0700DAF253 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D2F737201E55DE0700DAF253 /* WorgRebornExt */;
+			targetProxy = D2F7372C1E55DE0700DAF253 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D2F737011E55DB5F00DAF253 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D2F737021E55DB5F00DAF253 /* Base */,
+			);
+			name = Main.storyboard;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		D2F737061E55DB5F00DAF253 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D2F737071E55DB5F00DAF253 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		D2F737281E55DE0700DAF253 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D2F737291E55DE0700DAF253 /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D2F737151E55DB6000DAF253 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D2F737161E55DB6000DAF253 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D2F737181E55DB6000DAF253 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1D7D3BEDC9456D2451F4C94B /* Pods-WorgReborn.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = WorgReborn/WorgReborn.entitlements;
+				DEVELOPMENT_TEAM = 33CTRV3MKT;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/RealmSwift",
+				);
+				INFOPLIST_FILE = WorgReborn/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dot42dev.WorgReborn;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		D2F737191E55DB6000DAF253 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EDE98118FFFDE69460369A2B /* Pods-WorgReborn.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = WorgReborn/WorgReborn.entitlements;
+				DEVELOPMENT_TEAM = 33CTRV3MKT;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/RealmSwift",
+				);
+				INFOPLIST_FILE = WorgReborn/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dot42dev.WorgReborn;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		D2F7371B1E55DB6000DAF253 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = WorgRebornUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dot42dev.WorgRebornUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = WorgReborn;
+			};
+			name = Debug;
+		};
+		D2F7371C1E55DB6000DAF253 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = WorgRebornUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dot42dev.WorgRebornUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = WorgReborn;
+			};
+			name = Release;
+		};
+		D2F737301E55DE0700DAF253 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = WorgRebornExt/WorgRebornExt.entitlements;
+				DEVELOPMENT_TEAM = 33CTRV3MKT;
+				INFOPLIST_FILE = WorgRebornExt/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dot42dev.WorgReborn.WorgRebornExt;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		D2F737311E55DE0700DAF253 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = WorgRebornExt/WorgRebornExt.entitlements;
+				DEVELOPMENT_TEAM = 33CTRV3MKT;
+				INFOPLIST_FILE = WorgRebornExt/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dot42dev.WorgReborn.WorgRebornExt;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D2F736F31E55DB5F00DAF253 /* Build configuration list for PBXProject "WorgReborn" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2F737151E55DB6000DAF253 /* Debug */,
+				D2F737161E55DB6000DAF253 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D2F737171E55DB6000DAF253 /* Build configuration list for PBXNativeTarget "WorgReborn" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2F737181E55DB6000DAF253 /* Debug */,
+				D2F737191E55DB6000DAF253 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D2F7371A1E55DB6000DAF253 /* Build configuration list for PBXNativeTarget "WorgRebornUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2F7371B1E55DB6000DAF253 /* Debug */,
+				D2F7371C1E55DB6000DAF253 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D2F7372F1E55DE0700DAF253 /* Build configuration list for PBXNativeTarget "WorgRebornExt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2F737301E55DE0700DAF253 /* Debug */,
+				D2F737311E55DE0700DAF253 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D2F736F01E55DB5F00DAF253 /* Project object */;
+}

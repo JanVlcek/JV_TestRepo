@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="6254" systemVersion="13F34" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="CoinsPouch" representedClassName="CoinsPouch" syncable="YES">
+        <attribute name="amount" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="timeStamp" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="trainingType" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="transType" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Config" representedClassName="Config" syncable="YES">
+        <attribute name="contextSentences" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="fullText" optional="YES" attributeType="Integer 16" syncable="YES"/>
+        <attribute name="game" optional="YES" attributeType="Integer 16" syncable="YES"/>
+        <attribute name="intListening" optional="YES" attributeType="Integer 16" syncable="YES"/>
+        <attribute name="know" optional="YES" attributeType="Integer 16" syncable="YES"/>
+        <attribute name="listening" optional="YES" attributeType="Integer 16" syncable="YES"/>
+        <attribute name="mixWordSentence" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="numberOfDays" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="oneOf3" optional="YES" attributeType="Integer 16" syncable="YES"/>
+    </entity>
+    <entity name="Day" representedClassName="Day" syncable="YES">
+        <attribute name="globalProgress" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <relationship name="progress" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Progress" inverseName="day" inverseEntity="Progress" syncable="YES"/>
+        <relationship name="words" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="WordData" inverseName="days" inverseEntity="WordData" syncable="YES"/>
+    </entity>
+    <entity name="Lection" representedClassName="Lection" syncable="YES">
+        <attribute name="langCode" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lID" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="words" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="WordData" syncable="YES"/>
+    </entity>
+    <entity name="Progress" representedClassName="Progress" syncable="YES">
+        <attribute name="fullTextF" optional="YES" attributeType="Integer 16" syncable="YES"/>
+        <attribute name="fullTextO" optional="YES" attributeType="Integer 16" syncable="YES"/>
+        <attribute name="gameF" optional="YES" attributeType="Integer 16" syncable="YES"/>
+        <attribute name="gameO" optional="YES" attributeType="Integer 16" syncable="YES"/>
+        <attribute name="intListeningF" optional="YES" attributeType="Integer 16" syncable="YES"/>
+        <attribute name="intListeningO" optional="YES" attributeType="Integer 16" syncable="YES"/>
+        <attribute name="knowF" optional="YES" attributeType="Integer 16" syncable="YES"/>
+        <attribute name="knowO" optional="YES" attributeType="Integer 16" syncable="YES"/>
+        <attribute name="listeningF" optional="YES" attributeType="Integer 16" syncable="YES"/>
+        <attribute name="listeningO" optional="YES" attributeType="Integer 16" syncable="YES"/>
+        <attribute name="oneOf3F" optional="YES" attributeType="Integer 16" syncable="YES"/>
+        <attribute name="oneOf3O" optional="YES" attributeType="Integer 16" syncable="YES"/>
+        <relationship name="day" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Day" inverseName="progress" inverseEntity="Day" syncable="YES"/>
+    </entity>
+    <entity name="Session" representedClassName="Session" syncable="YES">
+        <attribute name="id" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="langCode" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="progress" optional="YES" attributeType="Double" defaultValueString="0" syncable="YES"/>
+        <attribute name="startDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <relationship name="coinsPouch" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="CoinsPouch" syncable="YES"/>
+        <relationship name="config" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Config" syncable="YES"/>
+        <relationship name="day" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Day" syncable="YES"/>
+        <relationship name="wordScore" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="WordScore" inverseName="session" inverseEntity="WordScore" syncable="YES"/>
+    </entity>
+    <entity name="WordData" representedClassName="WordData" syncable="YES">
+        <attribute name="f_lang" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="f_sound" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="langCode" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lID" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="o_lang" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="o_sound" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="u_id" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="w_id" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <relationship name="days" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Day" inverseName="words" inverseEntity="Day" syncable="YES"/>
+    </entity>
+    <entity name="WordScore" representedClassName="WordScore" syncable="YES">
+        <attribute name="order" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="score" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <relationship name="session" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Session" inverseName="wordScore" inverseEntity="Session" syncable="YES"/>
+        <relationship name="word" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="WordData" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="CoinsPouch" positionX="-594" positionY="171" width="128" height="103"/>
+        <element name="Config" positionX="-344" positionY="-187" width="128" height="178"/>
+        <element name="Lection" positionX="63" positionY="-133" width="128" height="103"/>
+        <element name="Progress" positionX="-432" positionY="248" width="128" height="238"/>
+        <element name="Session" positionX="-569" positionY="-54" width="128" height="178"/>
+        <element name="WordData" positionX="-38" positionY="20" width="128" height="193"/>
+        <element name="WordScore" positionX="-252" positionY="153" width="128" height="103"/>
+        <element name="Day" positionX="-225" positionY="27" width="128" height="103"/>
+    </elements>
+</model>
